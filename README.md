@@ -38,5 +38,5 @@
 
 ## Contact
 
-**This simple website is created by ***Anjali Pushkar*** **and** ***Nirmal Singh*** **who are pursuing in 3rd year B. Tech Computer Science Engineering from Ambedkar Institute of Advanced Communication Technologies and Research. If you want any kind of help, we are always there by your side so feel free to ask any kind of query.
+**This simple website is created by** ***Anjali Pushkar*** **and** ***Nirmal Singh*** **who are pursuing in 3rd year B. Tech Computer Science Engineering from Ambedkar Institute of Advanced Communication Technologies and Research. If you want any kind of help, we are always there by your side so feel free to ask any kind of query.
 Thankyou**
