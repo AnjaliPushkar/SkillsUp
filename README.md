@@ -10,8 +10,8 @@
 **Through this project we can increase our skills during quarantine as well as in our daily routine. In this project we have created a site through which you can choose different courses from different platforms. You will also get to know the different courses available in the era. Mostly students know about few courses which are famous but from this site you can get choices and not only of courses but also about the platform according to your budget.**
 
 ![](/course/static/download.png)
-![](https://www.google.com/url?sa=i&url=https%3A%2F%2Fdepositphotos.com%2Fvector-images%2Fcoder.html&psig=AOvVaw1TXV4QQgR0w75LmpePPtt1&ust=1591126245880000&source=images&cd=vfe&ved=2ahUKEwiirtmmreHpAhVpGbcAHZM_ACUQr4kDegUIARCkAg)
-<img src= "/course/static/download."/>
+
+<!-- <img src= "/course/static/download."/> -->
 
 ## Technologies
 
@@ -23,7 +23,7 @@
 
 ## Working and Features
 
-**This website is simple to use. First go to our website (our first page is designed in html it's named as homepage.html which is inside the template of shop folder) then just click the courses and platforms you want to check and learn then join courses according to your needs and budgets. It provide you the best courses and platforms.** 
+**This website is simple to use. First go to our website (our first page is designed in html it's named as homepage.html which is inside the template of shop folder) then just click the courses and platforms you want to check and learn then join courses according to your needs and budgets. It provide you the best courses and platforms.**
 * **SkillsUp website doesn't ask for your data that is there is no need to login or signup, you can open the website and directly take advantages of features available.**
 * **Then our first page is our home in which all the features are shortly available. We have created this website for those who are ready to learn anything, who wants to increase their skills**
 * **and lastly who don't care about the quarantine or daily life, they are just born to gloom themselves. And we have also added the blog content in which any one can post their block or article in which they can share about their experience in the course so that other learners can take the advantages.**
