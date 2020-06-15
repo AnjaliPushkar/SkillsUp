@@ -30,7 +30,7 @@
 
 ## Status
 
-**This project is finished.But we are not able to deploy it due to some major issues.**
+**This project is finished.**
 
 ## Inspiration
 
