@@ -7,6 +7,15 @@
     color: black;
     font-size: 30px;
 }
+
+p{
+    font-size : 1.5rem;
+}
+
+.header h2{
+    text-decoration : underline;
+}
+
 body{
   background: #E6DADA;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to left, #274046, #E6DADA);  /* Chrome 10-25, Safari 5.1-6 */
@@ -19,6 +28,10 @@ body{
     text-align: center;
     background-color: #474e5d;
     color: white;
+}
+
+.flex-container {
+    justify-content: space-around;
 }
 
 
@@ -45,7 +58,7 @@ body{
       padding: 10px;
       background-color:#474e5d;
       color: white;
-      height: 200px;
+      height: auto;
     }
 {% endblock %}
 {% block title%} Contact Us - My Awesome Cart{% endblock %}
@@ -61,10 +74,12 @@ body{
 
  <div class="header">
      <h1>Our Team</h1>
+     <p>Our team consists of two members i.e., Anjali Pushkar (Back-end developer) and Nirmal Singh (Frontend developer). We have limited team but a very talented and hard working team. We both are pursuing in b.tech 3rd year from Computer Science branch from Ambedkar Institute of Advanced Communication Technologies and Research. Our goal is to provide the choices to the learners. We want that everyone should know about the courses before joining them so that they can learn and do something good with their future and could increase their knowledge. We are always there to solve the queries. Hope you will find it helpful and could able to upgrade your skills.</p>
+     <h2>More about team</h2>
 </div>
 
 <section>
- <div class="container">
+ <div class="flex-container">
      <div class="row">
          <div class="col-lg-3 mb-4">
              <div class="card">
@@ -75,6 +90,10 @@ body{
                      <p class="card-text"> WEB DEVELOPER-BACKEND</p>
                  </div>
              </div>
+         </div>
+         <div class="col-lg mb-4">
+             <h3>ANJALI PUSHKAR</h3>
+            <p>Anjali was born in 2000 in Delhi.She studies in GGSIP University.She is a backend developer of this website. Excellent client manager. She is always accurate, all promises are fulfilled, all questions get answers, the team presents very attentive and positive approach.</p>
          </div>
     </div>
      <div class="row">
@@ -88,17 +107,22 @@ body{
                  </div>
              </div>
          </div>
+         <div class="col-lg mb-4">
+             <h3>NIRMAL SINGH</h3>
+            <p>Nirmal was born in 1999 in Delhi.She studies in GGSIP University.She is a backend developer of this website. She is proficient with web development related technologies like HTML, CSS, Javascript and many more. Excellent client manager. She is always accurate, all promises are fulfilled, all questions get answers, the team presents very attentive and positive approach.</p>
+         </div>
      </div>
  </div>
 
 
 <footer>
-<h2>For contact</h2>
-<p>skillsup@gmail.com</p>
-<p>phone no:99999999</p>
-<i class="fa fa-facebook-square" style="font-size:30px"></i><span>  </span>
-<i class="fa fa-instagram" style="font-size:30px"></i>
-
+    <h1 style="text-align:center">Our Clients</h1>
+  <p style="text-align:center">Thank You for Choosing Us!</p>
+  <h4 style="text-align:center">For contact</h4>
+  <p>skillsup@gmail.com</p>
+  <p>phone no:99999999</p>
+  <i class="fab fa-facebook-square" style="font-size:30px; color : white"></i>
+  <i class="fab fa-instagram" style="font-size:30px ; color : white"></i>
 </footer>
 
 

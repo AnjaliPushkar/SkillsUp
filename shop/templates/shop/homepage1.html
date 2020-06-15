@@ -23,9 +23,9 @@
 <div class="div1">
 	<h2>Achieve your goals with SkillsUp</h2>
 <div class="flex-container">
-<ul class="prop-list">
-	<li class="prop-item">
-		<div class= "img-container">
+	<div class="row">
+		<div class="col-lg mb-4">
+			<div class= "img-container">
 			<i class= "fas fa-chalkboard-teacher fa-7x"></i>
 		</div>
 			<h3 class="prop-title">
@@ -34,20 +34,20 @@
 					<small>like Python, Java, Machine learning and more</small>
 				</span>
 			</h3>
-	</li>
-	<li class="prop-item">
-		<div class= "img-container">
-			<i class= "fas fa-user-graduate fa-7x"></i>
 		</div>
+		<div class="col-lg mb-4">
+			<div class= "img-container">
+				<i class= "fas fa-user-graduate fa-7x"></i>
+			</div>
 			<h3 class="prop-title">
 				<span>
 					Get ready for career
 					<small>in high-demand fields like IT, AI and cloud engineering</small>
 				</span>
 			</h3>
-	</li>
-	<li class="prop-item">
-		<div class= "img-container">
+		</div>
+		<div class="col-lg mb-4">
+			<div class= "img-container">
 			<i class= "fas fa-users fa-7x"></i>
 		</div>
 			<h3 class="prop-title">
@@ -56,9 +56,19 @@
 					<small>with on-demand training and development programs</small>
 				</span>
 			</h3>
-	</li>
-
-</ul>
+		</div>
+		<div class="col-lg mb-4">
+			<div class= "img-container">
+			<i class= "fa fa-globe fa-7x"></i>
+		</div>
+			<h3 class="prop-title">
+				<span>
+					WORLDWIDE
+					<small>All sites you make with SkillsUp are mobile-friendly. You don't have to create a special mobile version of your site.</small>
+				</span>
+			</h3>
+		</div>
+	</div>
 </div>
 </div>
 <section>
@@ -113,11 +123,13 @@
 </div>
 
 <footer class='container-fluid'>
-  <h2>For contact</h2>
+  <h1 style="text-align:center">Our Clients</h1>
+  <p style="text-align:center">Thank You for Choosing Us!</p>
+  <h4 style="text-align:center">For contact</h4>
   <p>skillsup@gmail.com</p>
   <p>phone no:99999999</p>
-  <i class="fa fa-facebook-square" style="font-size:30px; color : white"></i>
-  <i class="fa fa-instagram" style="font-size:30px ; color : white"></i>
+  <i class="fab fa-facebook-square" style="font-size:30px; color : white"></i>
+  <i class="fab fa-instagram" style="font-size:30px ; color : white"></i>
 
 </footer>
 
@@ -163,9 +175,16 @@ body{
 }
 
 .flex-container {
+	box-sizing: border-box;
 	display : flex;
 	flex-flow : row-wrap;
-	justify-content: space-between;
+	justify-content: center;
+	padding: 30px;
+	margin: 30px;
+}
+
+.img-container {
+	align-items: center;
 }
 
 h2 {
@@ -178,42 +197,6 @@ h2 {
     text-align: center;
     font-size: 32px;
     line-height: 44px;	
-}
-
-.prop-list {
-	width: 100%;
-	height: 300px;
-	list-style-type : none;
-	box-sizing : border-box;
-	padding : 0;
-	margin : 0;
-	display: flex;
-	flex-direction : row;
-	flex-wrap : wrap;
-	line-height : 100px;
-	text-align : center;
-	text-size-adjust : 100% ;
-	justify-content : center;
-}
-
-@media (max-width: 991px) and (min-width: 480px){
-	.prop-item {
-	margin-right : 0;
-	padding-right : 8vw;
-}	
-}
-
-.prop-item {
-	display : flex;
-	flex-direction : column;
-	align-items : center;
-	font-size : 16px;
-	line-height : 100px;
-	max-width : 190px;
-	padding-right : 32px;
-	text-align: center;
-	text-size-adjust : 100% ;
-	width : 100%;
 }
 
 i {
@@ -267,7 +250,7 @@ footer {
       padding: 10px;
       background-color:DarkSlateGrey;
       color: white;
-      height: 250px;
+      height: auto;
     }
 
 
