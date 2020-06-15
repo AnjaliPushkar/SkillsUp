@@ -3,6 +3,9 @@
           body {
           background-color: DarkSlateGray;
           }
+          .container{
+            padding: 25px;
+          }
           .col-md-3
           {
           display: inline-block;
@@ -52,11 +55,14 @@
            padding-right: 0;
 
            }
+
+
  {% endblock %}
 {% block courseactive %} active {% endblock courseactive %}
 {% block body %}
 {% load static %}
 <div class="container " >
+  
     <!--Slideshow starts here -->
     {% for product, range, nSlides in allProds %}
     <h4 class="my-4" style="color:black">{{product.0.category}} - Recommended Items</h4>

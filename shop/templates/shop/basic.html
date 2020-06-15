@@ -18,9 +18,12 @@
   </style>
   </head>
   <body>
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark ">
+      <a href="{% url "homepage1" %}" ><img src="{% static 'large.png' %}" class="logo" width="150px" height="150px"/></a> -->
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
-  <a class="navbar-brand" href="{% url "homepage1" %}">SkillsUp</a>
+        <a href="{% url "homepage1" %}" ><img src="{% static 'logo.png' %}" class="logo" width="50px" height="50px"/></a>
+  <!-- <a class="navbar-brand" href="{% url "homepage1" %}">SkillsUp</a> -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -28,16 +31,16 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item  {% block courseactive %} {% endblock courseactive %}">
-        <a class="nav-link" href="{% url "ShopHome" %}">Courses <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="{% url "ShopHome" %}"><h3  style="color: black">   Courses</h3> <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item  {% block contactactive %} {% endblock contactactive %}">
-        <a class="nav-link" href="/shop/contact">Contact <span class="sr-only">(current)</span> </a>
+        <a class="nav-link" href="/shop/contact"><h3 style="color: black">   Contact</h3> <span class="sr-only">(current)</span> </a>
       </li>
       <li class="nav-item {% block aboutactive %} {% endblock aboutactive %}">
-        <a class="nav-link" href="{% url "AboutUs" %}">About Us <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="{% url "AboutUs" %}"><h3 style="color: black">   About Us</h3> <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item {% block blogactive %} {% endblock blogactive %}">
-        <a class="nav-link" href="{% url "blog" %}">Blog <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="{% url "blog" %}"><h3 style="color: black">   Blog </h3><span class="sr-only">(current)</span></a>
       </li>
       <!-- <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
