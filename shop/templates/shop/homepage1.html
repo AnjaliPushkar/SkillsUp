@@ -10,16 +10,34 @@
 <div class="w3-container my-3">
 <img src= "{% static 'back.jpg' %}" alt="Girl in a jacket" width= 100% height= auto>
 <div class="text-block" style="text-align:center">
-    <h1 style="text-align: center">WANT TO LEARN NEW SKILLS..??</h1>
+    <h1 style="text-align: center">WANT TO LEARN NEW SKILLS..??</h1><br /><br/>
     <p>SkillsUp is a web service where you can learn programming online.</p>
-    <p>We offer you a fully equipped coding environment to get you started.</p>
-    <button type="button" class="btn btn-success">Sign up with Email</button>
-    <p>or</p>
-    <button type="button" class="btn btn-success">Sign up with Facebook</button>
-    <button type="button" class="btn btn-success">Sign up with Twitter</button>
+    <p>We offer you a fully equipped coding environment to get you started.</p><br /><br/>
+    <form action="{% url "ShopHome" %}">
+    <button type="button" formaction = "{% url "ShopHome" %}" class="btn btn-success">Courses</button>
+    </form>
   </div>
 </div>
+
+<div class="info">
+  <h2>We are SkillsUp</h2>
+
+  <p>Through SkillsUp you can increase your skills during quarantine as well as<br /> in our daily routine.
+     We have created a site through which you can<br /> choose different courses from different platforms.<br />
+      You will also get to know the different courses available<br /> in the era.
+       Most of the students know about few courses<br /> which are famous but from this site you can get different courses and<br /> not only of courses but also about the platform according to your budget.<br />
+       If you are still confused between the courses or platform to choose,<br /> feel free to use the contact block and we'll<br /> definitely try to help you.<br /></p><br />
 </div>
+<div class="image1 my-3">
+  <img src= "{% static 'l2.png' %}" alt="Girl in a jacket" width= 100% height= auto>
+</div>
+<div class="image2 my-3">
+  <img src= "{% static 'graph.jpg' %}" alt="Girl in a jacket" width= 100% height= auto>
+</div>
+<div class="image3 my-3">
+  <img src= "{% static 'std.jpg' %}" alt="Girl in a jacket" width= 100% height= auto>
+</div>
+
 <div class="div1">
 	<h2>Achieve your goals with SkillsUp</h2>
 <div class="flex-container">
@@ -137,6 +155,28 @@
 
 
 {% block css %}
+.info {
+  position:relative;
+background-color:#D9E9F3;
+<!-- background: transparent url('img/Rectangle 571.png') 0% 0% no-repeat padding-box; -->
+opacity: 0.2;
+}
+
+.info h2 {
+  color : black;
+}
+.info p {
+
+    text-align: center;
+  font: Regular 100px Roboto;
+  font-size : 20px;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1
+  }
+.image1 {
+  position:relative;
+}
 body{
   background-color: black;
 }
@@ -196,7 +236,7 @@ h2 {
     padding: 0 20px;
     text-align: center;
     font-size: 32px;
-    line-height: 44px;	
+    line-height: 44px;
 }
 
 i {
