@@ -8,16 +8,59 @@
 {% block body %}
 
 <div class="w3-container my-3">
-<img src= "{% static 'back.jpg' %}" alt="Girl in a jacket" width="1350" height="600">
-<div class="text-block">
-<h1>WANT TO</h1>
-<h1>LEARN NEW </h1>
-<h1>SKILLS..??</h1>
+<img src= "{% static 'back.jpg' %}" alt="Girl in a jacket" width= 100% height= auto>
+<div class="text-block" style="text-align:center">
+    <h1 style="text-align: center">WANT TO LEARN NEW SKILLS..??</h1>
+    <p>SkillsUp is a web service where you can learn programming online.</p>
+    <p>We offer you a fully equipped coding environment to get you started.</p>
+    <button type="button" class="btn btn-success">Sign up with Email</button>
+    <p>or</p>
+    <button type="button" class="btn btn-success">Sign up with Facebook</button>
+    <button type="button" class="btn btn-success">Sign up with Twitter</button>
+  </div>
 </div>
 </div>
+<div class="div1">
+	<h2>Achieve your goals with SkillsUp</h2>
+<div class="flex-container">
+<ul class="prop-list">
+	<li class="prop-item">
+		<div class= "img-container">
+			<i class= "fas fa-chalkboard-teacher fa-7x"></i>
+		</div>
+			<h3 class="prop-title">
+				<span>
+					Learn new Skills
+					<small>like Python, Java, Machine learning and more</small>
+				</span>
+			</h3>
+	</li>
+	<li class="prop-item">
+		<div class= "img-container">
+			<i class= "fas fa-user-graduate fa-7x"></i>
+		</div>
+			<h3 class="prop-title">
+				<span>
+					Get ready for career
+					<small>in high-demand fields like IT, AI and cloud engineering</small>
+				</span>
+			</h3>
+	</li>
+	<li class="prop-item">
+		<div class= "img-container">
+			<i class= "fas fa-users fa-7x"></i>
+		</div>
+			<h3 class="prop-title">
+				<span>
+					Upskill your organization
+					<small>with on-demand training and development programs</small>
+				</span>
+			</h3>
+	</li>
 
-
-<div>
+</ul>
+</div>
+</div>
 <section>
     <div class="container">
         <div class="row">
@@ -49,8 +92,9 @@
                     <div class="card-body">
                         <h4 class="card-title">Contact Us</h4>
 
-                        <p class="card-text">Feel free to ask anything. We will try to hell you out as early as possible.</p>
-                        <a href="{% url 'ContactUs' %}" class="btn btn-primary stretched-link">See Contacts</a>
+                        <p class="card-text">Feel free to ask anything. We will try t hell you out as early as possible.</p>
+                        <a href="{% url 'ContactUs' %}" class="btn btn-primary stret
+                        hed-link">See Contacts</a>
                     </div>
                 </div>
             </div>
@@ -72,8 +116,8 @@
   <h2>For contact</h2>
   <p>skillsup@gmail.com</p>
   <p>phone no:99999999</p>
-  <i class="fa fa-facebook-square" style="font-size:30px"></i><span>  </span>
-  <i class="fa fa-instagram" style="font-size:30px"></i>
+  <i class="fa fa-facebook-square" style="font-size:30px; color : white"></i>
+  <i class="fa fa-instagram" style="font-size:30px ; color : white"></i>
 
 </footer>
 
@@ -94,6 +138,7 @@ body{
   color: White;
 }
 
+
 .content p{
   text-color : white;
   float: right;
@@ -110,7 +155,88 @@ body{
 }
 
 .text-block h1{
-  font-size: 100px;
+  font-size: 10vw;
+}
+
+.div1 {
+	background-color : black;
+}
+
+.flex-container {
+	display : flex;
+	flex-flow : row-wrap;
+	justify-content: space-between;
+}
+
+h2 {
+	color : white;
+	display: block;
+    font-family: OpenSans,Arial,sans-serif;
+    font-weight: 700;
+    margin-bottom: 50px;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 44px;	
+}
+
+.prop-list {
+	width: 100%;
+	height: 300px;
+	list-style-type : none;
+	box-sizing : border-box;
+	padding : 0;
+	margin : 0;
+	display: flex;
+	flex-direction : row;
+	flex-wrap : wrap;
+	line-height : 100px;
+	text-align : center;
+	text-size-adjust : 100% ;
+	justify-content : center;
+}
+
+@media (max-width: 991px) and (min-width: 480px){
+	.prop-item {
+	margin-right : 0;
+	padding-right : 8vw;
+}	
+}
+
+.prop-item {
+	display : flex;
+	flex-direction : column;
+	align-items : center;
+	font-size : 16px;
+	line-height : 100px;
+	max-width : 190px;
+	padding-right : 32px;
+	text-align: center;
+	text-size-adjust : 100% ;
+	width : 100%;
+}
+
+i {
+	color:#2196F3;
+}
+
+.prop-title {
+	font-family : OpenSans,Arial,sans-serif;
+	font-weight : 400;
+	line-height : 32px;
+	color: white;
+	margin-bottom : 30px;
+}
+
+.prop-title h3 {
+	font-size : 1.5rem;
+}
+
+.prop-title small {
+	display : block;
+	font-size : 16px;
+	line-height : 27px;
+	margin-top : 10px;
 }
 
 #im:hover {
@@ -141,7 +267,7 @@ footer {
       padding: 10px;
       background-color:DarkSlateGrey;
       color: white;
-      height: 200px;
+      height: 250px;
     }
 
 
