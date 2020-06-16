@@ -6,17 +6,50 @@
 
 {% load static %}
 {% block body %}
+<div id="demo" class="carousel slide" data-ride="carousel">
 
-<div class="w3-container my-3">
-<img src= "{% static 'back.jpg' %}" alt="Girl in a jacket" width= 100% height= auto>
-<div class="text-block" style="text-align:center">
-    <h1 style="text-align: center">WANT TO LEARN NEW SKILLS..??</h1><br /><br/>
-    <p>SkillsUp is a web service where you can learn programming online.</p>
-    <p>We offer you a fully equipped coding environment to get you started.</p><br /><br/>
-    <form action="{% url "ShopHome" %}">
-    <button type="button" formaction = "{% url "ShopHome" %}" class="btn btn-success">Courses</button>
-    </form>
-  </div>
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+<div class="carousel-inner">
+    <div class="carousel-item active">      
+		<img src= "{% static 'back.jpg' %}" alt="Girl in a jacket" width= 100% height= auto>
+    	<div class="carousel-caption d-none d-md-block">
+    			<h1 style="text-align: center; color:white">WANT TO LEARN NEW SKILLS..??</h1><br /><br/>
+    			<p>SkillsUp is a web service where you can learn programming online.</p>
+    			<p>We offer you a fully equipped coding environment to get you started.</p><br /><br/>
+    			<a href="{% url "ShopHome" %}" class="btn btn-info" role="button">Courses</a>
+    	</div>	
+    </div>
+    <div class="carousel-item">
+    	<img src="{%static 'l1.jpg'%}" alt="covid" width=100% height=auto>
+    	<div class="carousel-caption d-none d-md-block">
+    		<h1 style="color:white;">WE BRING THE CLASSROOM TO YOUR HOME THIS COVID-19</h1>
+    		<P>Online classes are a perfect alternative to Classroom courses.</P>
+    	</div>
+	</div>
+	<div class="carousel-item">
+    	<img src="{%static 'learn1.jpg'%}" alt="girl" width=100% height=auto>
+    	<div class="carousel-caption d-none d-md-block">
+    		<h1 style="color:black">LEARN FROM HOME | LEARN ONLINE</h1>
+    		<P>Introducing Online Programming Courses!</P>
+    	</div>
+	</div>
+
+</div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
 </div>
 
 <div class="info">
@@ -206,8 +239,23 @@ body{
   padding-right: 20px;
 }
 
-.text-block h1{
-  font-size: 10vw;
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}   
+
+.carousel-item {
+	text-size-adjust: auto;
+}
+
+.carousel-caption h1{
+  font-size: 8vw;
+  top: 80px;
+  right: 200px;
+}
+
+.carousel-caption p{
+  font-size: 1.5vw;
 }
 
 .div1 {
