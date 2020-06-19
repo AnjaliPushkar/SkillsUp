@@ -1,0 +1,97 @@
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>Couses</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href = "{% static 'open-iconic/font/css/open-iconic-bootstrap.css' %}">
+
+  </head>
+<body>
+<div class="container">
+  <img src="{% static 'logo.png' %}" height="200px" width="150px" class="center">
+    <div id="formdiv">
+        <!-- <h3>LOGIN HERE</h3> -->
+          <form method='POST' id="login" >
+          {% csrf_token %}
+               <div class="g1">
+                   <label for="ea">Email Address:</label><br>
+                   <input class="in1" type="email" id="ea" name="username" action="" method="post"><br>
+               </div>
+                <div  class="g2">
+                   <label for="pass">Password:</label><br>
+                   <input class="in2" type="password" id="pass" name="password" action="" method="post"><br>
+                </div>
+                <br>
+                <input type="submit" value="Log In" class="bt" formaction="homepage1">
+                <input type="submit" value="New User?" class="bt1" formaction="newuser">
+        </form>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+ <style>
+ .center {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+ }
+a{
+    width:300px;
+    height:100px;
+    background-color:transparent;
+    font-size: 20px;
+}
+a:hover{
+    color:lightsteelblue;
+}
+body{
+    background-color: black;
+    /* background-color:#2c2c2c; */
+}
+span{
+    margin-right: 30px;
+    margin-left:40px;
+<!-- }
+.bt{
+    margin-left:80px;
+    width:100px;
+}
+.bt1{
+    margin-left:auto;
+    width:100px;
+}
+.bt:hover{
+    font-style: oblique;
+    background-color: #00d1ff;
+}
+
+.bt1:hover{
+    font-style: oblique;
+    background-color: #00d1ff;;
+}
+a{
+ align: center;
+}
+.container{
+    margin-top:100px;
+   width: max-content;
+   color:#00d1ff;
+}
+h5{
+    font-style: normal;
+    text-align: center;
+}
+.in1,.in2{
+    width: 350px;
+    margin-bottom:5px;
+}
+</style>

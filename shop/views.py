@@ -59,8 +59,6 @@ class productView(ObjectViewMixin, DetailView):
         # product = Product.objects.filter(id=pk)
         # return render(request, 'shop/prodView.html')
 
-
-
 def about(request):
     return render(request, 'shop/about.html')
 
@@ -81,36 +79,5 @@ def contact(request):
         thank = True
     return render(request, 'shop/contact.html', {'thank': thank})
 
-# def contact(request):
-#     if request.method == 'POST':
-#         if request.POST['username'] and request.POST['email'] and request.POST['phone'] and request.POST['query']:
-#                 prod = Contact()
-#                 prod.username = request.POST['username']
-#                 prod.email = request.POST['email']
-#                 prod.phone = request.POST['phone']
-#                 prod.query = request.POST['query']
-#                 prod.save()
-#                 return render(request, 'shop/index.html')
-#
-#         else:
-#             return render(request, 'shop/contact.html', {'error' : 'All fields are required'})
-#     else:
-#         return render(request, 'shop/contact.html')
-
-
-
-#
-# def contact(request):
-#     if request.method == 'POST':
-#         if request.POST['username'] and request.POST['email'] and request.POST['phone'] and request.POST['query']:
-#             cont = Contact()
-#             cont.username = request.get.POST['username']
-#             cont.email= request.get.POST['email']
-#             cont.phone = request.get.POST['phone']
-#             cont.query = request.get.POST['query']
-#             cont.save()
-#             return render(request, 'shop/index.html')
-#         else:
-#             return render(request, 'shop/contact.html', {'error' : 'All fields are required'})
-#     else:
-#         return render(request, 'shop/contact.html')
+def logout(request):
+    return render( request, 'shop/login.html')
