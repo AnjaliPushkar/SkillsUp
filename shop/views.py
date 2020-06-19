@@ -1,26 +1,29 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Product, Contact, Blog
 from math import ceil
-
+from history.mixins import ObjectViewMixin
+from django.views.generic import ListView, DetailView
 # Create your views here.
 from django.http import HttpResponse
 
-def index(request):
-    # products = Product.objects.all()
-    # print(products)
-    # n = len(products)
-    # nSlides = n//4 + ceil((n/4)-(n//4))
+class index(ListView):
+    def get(self, request):
+        model = Product
+        # products = Product.objects.all()
+        # print(products)
+        # n = len(products)
+        # nSlides = n//4 + ceil((n/4)-(n//4))
 
-    allProds = []
-    catprods = Product.objects.values('category', 'id')
-    cats = {item['category'] for item in catprods}
-    for cat in cats:
-        prod = Product.objects.filter(category=cat)
-        n = len(prod)
-        nSlides = n // 4 + ceil((n / 4) - (n // 4))
-        allProds.append([prod, range(1, nSlides), nSlides])
-    params = {'allProds':allProds}
-    return render(request, 'shop/index.html', params)
+        allProds = []
+        catprods = Product.objects.values('category', 'id')
+        cats = {item['category'] for item in catprods}
+        for cat in cats:
+            prod = Product.objects.filter(category=cat)
+            n = len(prod)
+            nSlides = n // 4 + ceil((n / 4) - (n // 4))
+            allProds.append([prod, range(1, nSlides), nSlides])
+        params = {'allProds':allProds}
+        return render(request, 'shop/index.html', params)
 
 
 def searchMatch(query, item):
@@ -48,10 +51,13 @@ def search(request):
         params = {'msg': "Please make sure to enter relevant search query"}
     return render(request, 'shop/search.html', params)
 
-def productView(request, myid):
-    # Fetch the product using the id
-    product = Product.objects.filter(id=myid)
-    return render(request, 'shop/prodView.html', {'product':product[0]})
+class productView(ObjectViewMixin, DetailView):
+    model = Product
+    template_name = 'shop/prodView.html'
+    # def get(self, request):
+        # Fetch the product using the id
+        # product = Product.objects.filter(id=pk)
+        # return render(request, 'shop/prodView.html')
 
 
 

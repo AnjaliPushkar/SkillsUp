@@ -1,0 +1,36 @@
+{% extends "shop/basic.html" %}
+
+{% load humanize %}
+
+{% block content %}
+<div class="container my-3">
+    <h2>History Page</h2>
+
+        <div class="row">
+            <div class="col-12">
+                <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col"><h3>Course</h3></th>
+                    <th scope="col"><h3>Viewed On</h3></th>
+                    <th scope="col"><h3>Delete</h3></th>
+                </tr>
+                </thead>
+                <tbody>
+
+                {% for history in history_list %}
+                    <tr>
+                        <td>{{ history.content_object }}</td>
+                        <td>{{ history.viewed_on|naturaltime }}</td>
+                        <td><a href="{% url 'history_delete' history.pk  %}" class="btn btn-danger">Delete</a></td>
+                    </tr>
+                {% endfor %}
+
+
+                </tbody>
+            </table>
+            </div>
+        </div>
+</div>
+
+{% endblock content %}
