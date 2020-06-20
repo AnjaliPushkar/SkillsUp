@@ -12,27 +12,36 @@
 
   </head>
 <body>
+  {% if error %}
+  {{error}}
+  <br />
+  <br />
+  {% endif %}
 <div class="container">
   <img src="{% static 'logo.png' %}" height="200px" width="150px" class="center">
-    <div id="formdiv">
-        <!-- <h3>LOGIN HERE</h3> -->
-          <form method='POST' id="login" >
+        <!-- <h3>LOGIN HERE</h3> --> 
+           <form method='POST' action = '{% url 'login' %}' >
           {% csrf_token %}
+              <div class="g1">
+                  <label for="ea">Username:</label><br>
+                  <input class="in1" type="text" id="ea" name="username"><br>
+              </div>
                <div class="g1">
                    <label for="ea">Email Address:</label><br>
-                   <input class="in1" type="email" id="ea" name="username" action="" method="post"><br>
+                   <input class="in1" type="email" id="ea" name="email"><br>
                </div>
                 <div  class="g2">
                    <label for="pass">Password:</label><br>
-                   <input class="in2" type="password" id="pass" name="password" action="" method="post"><br>
+                   <input class="in2" type="password" id="pass" name="password"><br>
                 </div>
                 <br>
-                <input type="submit" value="Log In" class="bt" formaction="homepage1">
-                <input type="submit" value="New User?" class="bt1" formaction="newuser">
+                <input type="submit" value="Log In" class="bt">
         </form>
-    </div>
-</div>
-</body>
+        <h3>OR</h3>
+        <form action="{% url 'newuser' %}">
+          <input type="submit" value="New User" class="bt">
+  </form>
+ </body>
 </html>
 
 
@@ -47,7 +56,7 @@
 a{
     width:300px;
     height:100px;
-    background-color:transparent;
+    background-color:#00d1ff;
     font-size: 20px;
 }
 a:hover{
@@ -60,9 +69,9 @@ body{
 span{
     margin-right: 30px;
     margin-left:40px;
-<!-- }
+}
 .bt{
-    margin-left:80px;
+    margin-left:130px;
     width:100px;
 }
 .bt1{
@@ -75,20 +84,23 @@ span{
 }
 
 .bt1:hover{
-    font-style: oblique;
-    background-color: #00d1ff;;
+    font-style: oblique; */
+   background-color: #00d1ff;;
 }
 a{
  align: center;
 }
 .container{
-    margin-top:100px;
+    margin-top:70px;
    width: max-content;
    color:#00d1ff;
 }
 h5{
     font-style: normal;
     text-align: center;
+}
+h3 {
+  text-align: center;
 }
 .in1,.in2{
     width: 350px;

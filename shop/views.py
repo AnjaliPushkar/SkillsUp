@@ -80,4 +80,6 @@ def contact(request):
     return render(request, 'shop/contact.html', {'thank': thank})
 
 def logout(request):
+    if request.method == 'POST':
+        auth.logout(request)
     return render( request, 'shop/login.html')
