@@ -7,6 +7,9 @@
 
 ## General info
 
+
+<img src = "/course/static/logo.png" height = "200" width="200" align="left" hspace="10" vspace="10">
+
 **Through this project we can increase our skills during quarantine as well as in our daily routine. In this project we have created a site through which you can choose different courses from different platforms. You will also get to know the different courses available in the era. Mostly students know about few courses which are famous but from this site you can get choices and not only of courses but also about the platform according to your budget.**
 
 ![](/course/static/download.png)
@@ -27,6 +30,17 @@
 * **SkillsUp website doesn't ask for your data that is there is no need to login or signup, you can open the website and directly take advantages of features available.**
 * **Then our first page is our home in which all the features are shortly available. We have created this website for those who are ready to learn anything, who wants to increase their skills**
 * **and lastly who don't care about the quarantine or daily life, they are just born to gloom themselves. And we have also added the blog content in which any one can post their block or article in which they can share about their experience in the course so that other learners can take the advantages.**
+
+## To run locally
+
+1. Python 3
+2. install dependency: \
+     `pip install django`
+3. move in your project folder and run the commands given below:\
+     `python manage.py makemigrations`\
+     `python manage.py migrate`\
+     `python manage.py runserver`
+
 
 ## Status
 
