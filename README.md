@@ -8,7 +8,7 @@
 ## General info
 
 
-<img src = "/course/static/logo.png" height = "270" width="270" align="left" hspace="10" vspace="10">
+<img src = "/course/static/logo.png" height = "170" width="170" align="left" hspace="10" vspace="10">
 
 **Through this project we can increase our skills during quarantine as well as in our daily routine. In this project we have created a site through which you can choose different courses from different platforms. You will also get to know the different courses available in the era. Mostly students know about few courses which are famous but from this site you can get choices and not only of courses but also about the platform according to your budget.**
 <br />
